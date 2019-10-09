@@ -1,13 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Button } from 'semantic-ui-react'
+import { Search, Header } from 'semantic-ui-react'
 
 function App() {
   return (
     <div className="App">
-
-     <Button>Click Here</Button>
+      <div className="container">
+        <div className="search-container">
+          <Header as='h1'>Search a Playlist</Header>
+          <Search fluid className="search" />
+        </div>
+      </div>
     </div>
   );
 }
